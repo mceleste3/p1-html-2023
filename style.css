@@ -108,6 +108,7 @@ p {
 }
 
 #links {
-  background: linear-gradient(180deg, #ffc0d5, #ffc9c9, #fff89b);
-  height: 20rem;
+  background: linear-gradient(180deg, #e0bbc9, #ffc2c2 35%,  #fff5cc)  ;
+  height: 21.5rem;
 }
+/* #ffcccc*/
