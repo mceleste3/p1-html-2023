@@ -5,50 +5,42 @@ body {
 }
 .page-video {
   position: relative;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+}
+
+video {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .page-video-content {
+  z-index: 0;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  align-items: center;
 }
-
-img {
-  position: absolute;
-  margin-top: 1rem;
-}
-
-.page-video-content-nav {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  margin: 0.3rem;
-  top: -45.4rem;
-  left: 3rem;
-}
-
 
 .navigation-bar {
-  margin-left: 16rem;
-  display: flex;
-  flex-direction: row;
+  align-items: center;
+  margin-left: 3.2rem;
 }
 
-/* .text{
-    position: absolute;
-} */
-
 .navigation-bar a {
-  width: 17%;
+  margin: 0;
   color: rgb(255, 231, 124);
-  text-decoration: none;
   font-size: 4.7rem;
   cursor: pointer;
-  text-shadow: 0px 15px 1px rgb(52, 72, 172),
-    /*3D*/ -2px -3px 2px rgb(52, 72, 172), 0px 10px 2px rgb(52, 72, 172),
-    -2px 8px 1px rgb(52, 72, 172), -2px 14px 1px rgb(52, 72, 172),
-    2px -2px 2px rgb(52, 72, 172), 2px 2px 2px rgb(52, 72, 172),
-    2px 14px 2px rgb(52, 72, 172);
+  text-shadow: 0px 15px 1px rgb(52, 72, 172), -2px -3px 2px rgb(52, 72, 172),
+    0px 10px 2px rgb(52, 72, 172), -2px 8px 1px rgb(52, 72, 172),
+    -2px 14px 1px rgb(52, 72, 172), 2px -2px 2px rgb(52, 72, 172),
+    2px 2px 2px rgb(52, 72, 172), 2px 14px 2px rgb(52, 72, 172); /*3D*/
   display: inline-block;
   font-family: "Epilogue", sans-serif;
   transform: scale(0.5, 0.3) skewX(-5deg); /*tamaño, rotación*/
@@ -63,28 +55,25 @@ img {
     }
 } */
 
-#page-video-content-text {
-  width: 53.7rem;
-  padding: 0rem;
+.text {
   font-family: "Epilogue", sans-serif;
   font-size: 5.5rem;
   cursor: pointer;
+  position: absolute;
   text-shadow: 0px 15px 1px rgb(52, 72, 172),
     /*3D*/ -2px -3px 2px rgb(52, 72, 172), 0px 10px 2px rgb(52, 72, 172),
     -2px 8px 1px rgb(52, 72, 172), -2px 14px 1px rgb(52, 72, 172),
     2px -2px 2px rgb(52, 72, 172), 2px 2px 2px rgb(52, 72, 172),
     2px 14px 2px rgb(52, 72, 172);
   transform: scale(0.5, 0.3) skewX(-5deg); /*tamaño, rotación*/
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
+  top:35.5rem;
   margin: 0.3rem;
-  top: -11rem;
-  left: 20.4rem;
 }
 
-/* #page-video-content-text:hover::after {
+/* #text:hover::after {
   /*     animation-name: mouse-out;
     animation-duration: 3s;
   content: "";
@@ -98,17 +87,127 @@ p {
   margin: 0;
 }
 
-.yellow {
+#yellow {
   color: rgb(255, 246, 147);
   padding-bottom: 2rem;
 }
 
-.white {
+#white {
   color: white;
 }
 
 #links {
-  background: linear-gradient(180deg, #e0bbc9, #ffc2c2 35%,  #fff5cc)  ;
-  height: 21.5rem;
+  background: linear-gradient(180deg, #e0bbc9, #ffc2c2 35%, #fff5cc);
+  height: 21.6rem;
+  display: flex;
+  flex-direction: column;
 }
-/* #ffcccc*/
+
+#buttons {
+  position: absolute;
+  top: 45.3rem;
+  left: 33.8rem;
+}
+
+.btn{
+  background-color: rgb(255, 236, 154);
+  box-shadow:  0px 11px 1px -4px rgb(52, 72, 172), 0px 4px 1px -2px rgb(52, 72, 172), 0px 8px 1px -3px rgb(52, 72, 172);
+  color: rgb(52, 72, 172);
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.7rem;
+  border-color:  rgb(68, 91, 207);
+  cursor: pointer;
+}
+
+#btn-purchase{
+  width: 12.5rem;
+}
+
+#btn-stream{
+  width: 12.5rem;
+  margin-left: 0.9rem;
+}
+
+.btn span{
+  transform: scale(0.7, 0.42) skewX(-5deg);
+  display: inline-block;
+}
+
+
+.icons{
+  position: absolute;
+  top: 49rem;
+  left: 33rem;
+}
+
+.icons a{
+  text-decoration: none;
+}
+
+#whole{
+  position: absolute;
+  top: 52rem;
+  left: 40rem;
+}
+
+#image-container{
+  height: 570px;
+}
+
+#background-image{
+  width: 100%;
+  height:100%;
+}
+
+#check{
+  background-color: rgba(150, 145, 145, 0);
+  color: white;
+  font-size: 0.95rem;
+  border: 2px solid white;
+  padding: 0.9rem;
+  cursor: pointer;
+  position: absolute;
+  top: 87.3rem;
+  left: 76.2rem;
+}
+
+#check:hover{
+  border: 2px solid rgb(255, 236, 144);
+  color: rgb(250, 240, 105);
+}
+
+#btn-collection{
+  position: absolute;
+  top: 99.5rem;
+  left: 39.5rem;
+}
+
+#btn-collection .btn-section{
+  padding:2px 16px;
+  background-color: rgba(150, 145, 145, 0.3);
+  border: none;
+}
+
+#btn-collection :first-child{
+  background-color: white;
+}
+
+
+#purple{
+  white-space: nowrap;
+  color: #ffe0e4;
+  line-height: 6.8rem;
+  position: absolute;
+  top: 71.8rem;
+  left: 56rem;
+  font-size: 8rem;
+}
+
+#and{
+  font-size: 3.7rem;
+}
+
+
+
+
+

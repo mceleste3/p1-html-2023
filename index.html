@@ -9,28 +9,98 @@
   </head>
   <body>
     <div class="page-video">
-      <video autoplay loop height="15%" width="100%">
+      <video autoplay preload muted loop width="100%">
         <source
           src="https://d33wubrfki0l68.cloudfront.net/f213bfc39934b9fa48fd23320c563d836d649d88/e70c5/assets/video/rhcp_return-of-the-dream-canteen_clouds-header_v1d2.mp4"
         />
-        El navegador no soporta el video
       </video>
       <div class="page-video-content">
-        <div class="page-video-content-nav">
+        <nav class="navigation-bar">
           <img src="./rhcp-logo.png" alt="RHCP logo" width="45" height="45" />
-          <nav class="navigation-bar">
-            <a>TOUR</a>
-            <a>MUSIC</a>
-            <a>MERCH</a>
-            <a>COMMUNITY</a>
-          </nav>
-        </div>
-        <div id="page-video-content-text">
-          <p class="yellow">NEW STUDIO ALBUM</p>
-          <p class="white">NOW AVAILABLE</p>
+          <a>TOUR</a>
+          <a>MUSIC</a>
+          <a>MERCH</a>
+          <a>COMMUNITY</a>
+        </nav>
+        <div class="text">
+          <p id="yellow">NEW STUDIO ALBUM</p>
+          <p id="white">NOW AVAILABLE</p>
         </div>
       </div>
-      <div id="links">links</div>
+    </div>
+    <div id="links">
+      <div id="buttons">
+        <button class="btn" id="btn-purchase"><span>PURCHASE</span></button>
+        <button class="btn" id="btn-stream"><span>STREAM</span></button>
+      </div>
+      <div class="icons">
+        <a title="Spotify" target="_blank" href="">
+          <img width="30px" height="30px" src="spotify.png" alt="Spotify" />
+        </a>
+        <a title="Apple music" target="_blank" href="">
+          <img width="30px" height="30px" src="apple.png" alt="Apple music" />
+        </a>
+        <a title="Youtube" target="_blank" href="">
+          <img width="40px" height="27px" src="youtube.png" alt="Youtube" />
+        </a>
+        <a title="Amazon" target="_blank" href="">
+          <img width="30px" height="36px" src="amazon.png" alt="Amazon" />
+        </a>
+        <a title="Tildal" target="_blank" href="">
+          <img width="45px" height="30px" src="tildal.png" alt="Tildal" />
+        </a>
+        <a title="Deezer" target="_blank" href="">
+          <img width="40px" height="30px" src="deezer.png" alt="Deezer" />
+        </a>
+        <a title="Sound Cloud" target="_blank" href="">
+          <img
+            width="45px"
+            height="33px"
+            src="sound-cloud.png"
+            alt="Sound Cloud"
+          />
+        </a>
+        <a title="Audio Mack" target="_blank" href="">
+          <img
+            width="35px"
+            height="30px"
+            src="audiomack.png"
+            alt="Audio Mack"
+          />
+        </a>
+        <a title="Pandora" target="_blank" href="">
+          <img width="25px" height="30px" src="pandora.png" alt="Pandora" />
+        </a>
+      </div>
+      <a id="whole" title="Whole Lotta Red Hot" target="_blank" href="">
+        <img
+          width="200px"
+          height="70px"
+          src="whole.png"
+          alt="Whole Lotta Red Hot"
+        />
+      </a>
+    </div>
+    <div id="image-container">
+      <img src="fondo.png" id="background-image" />
+      <p class="text" id="purple">
+        TOUR DATES
+        <span id="and">AND</span>
+        TICKETS
+      </p>
+      <button id="check">
+        <span>CHECK IT OUT</span>
+      </button>
+      <div id="btn-collection">
+        <button class="btn-section"></button>
+        <button class="btn-section"></button>
+        <button class="btn-section"></button>
+        <button class="btn-section"></button>
+        <button class="btn-section"></button>
+        <button class="btn-section"></button>
+        <button class="btn-section"></button>
+        <button class="btn-section"></button>
+      </div>
     </div>
   </body>
 </html>
