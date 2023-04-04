@@ -55,6 +55,26 @@ video {
     }
 } */
 
+.shadow-text {
+  font-family: "Epilogue", sans-serif;
+  font-size: 5.5rem;
+  position: absolute;
+  text-shadow: 0px 15px 1px rgb(52, 72, 172),
+    /*3D*/ -2px -3px 2px rgb(52, 72, 172), 0px 10px 2px rgb(52, 72, 172),
+    -2px 8px 1px rgb(52, 72, 172), -2px 14px 1px rgb(52, 72, 172),
+    2px -2px 2px rgb(52, 72, 172), 2px 2px 2px rgb(52, 72, 172),
+    2px 14px 2px rgb(52, 72, 172);
+  transform: scale(0.5, 0.3) skewX(-5deg); /*tamaño, rotación*/
+}
+
+#new-album{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 35.5rem;
+  margin: 0.3rem;
+}
+
 .text {
   font-family: "Epilogue", sans-serif;
   font-size: 5.5rem;
@@ -69,7 +89,7 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top:35.5rem;
+  top: 35.5rem;
   margin: 0.3rem;
 }
 
@@ -88,8 +108,7 @@ p {
 }
 
 #yellow {
-  color: rgb(255, 246, 147);
-  padding-bottom: 2rem;
+  color: rgb(243, 234, 139);
 }
 
 #white {
@@ -109,57 +128,57 @@ p {
   left: 33.8rem;
 }
 
-.btn{
+.btn {
   background-color: rgb(255, 236, 154);
-  box-shadow:  0px 11px 1px -4px rgb(52, 72, 172), 0px 4px 1px -2px rgb(52, 72, 172), 0px 8px 1px -3px rgb(52, 72, 172);
+  box-shadow: 0px 11px 1px -4px rgb(52, 72, 172),
+    0px 4px 1px -2px rgb(52, 72, 172), 0px 8px 1px -3px rgb(52, 72, 172);
   color: rgb(52, 72, 172);
   font-family: "Epilogue", sans-serif;
   font-size: 1.7rem;
-  border-color:  rgb(68, 91, 207);
+  border-color: rgb(68, 91, 207);
   cursor: pointer;
 }
 
-#btn-purchase{
+#btn-purchase {
   width: 12.5rem;
 }
 
-#btn-stream{
+#btn-stream {
   width: 12.5rem;
   margin-left: 0.9rem;
 }
 
-.btn span{
+.btn span {
   transform: scale(0.7, 0.42) skewX(-5deg);
   display: inline-block;
 }
 
-
-.icons{
+.icons {
   position: absolute;
   top: 49rem;
   left: 33rem;
 }
 
-.icons a{
+.icons a {
   text-decoration: none;
 }
 
-#whole{
+#whole {
   position: absolute;
   top: 52rem;
   left: 40rem;
 }
 
-#image-container{
+#image-container {
   height: 570px;
 }
 
-#background-image{
+#background-image {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
-#check{
+#check {
   background-color: rgba(150, 145, 145, 0);
   color: white;
   font-size: 0.95rem;
@@ -171,29 +190,28 @@ p {
   left: 76.2rem;
 }
 
-#check:hover{
+#check:hover {
   border: 2px solid rgb(255, 236, 144);
   color: rgb(250, 240, 105);
 }
 
-#btn-collection{
+#btn-collection {
   position: absolute;
   top: 99.5rem;
   left: 39.5rem;
 }
 
-#btn-collection .btn-section{
-  padding:2px 16px;
+#btn-collection .btn-section {
+  padding: 2px 16px;
   background-color: rgba(150, 145, 145, 0.3);
   border: none;
 }
 
-#btn-collection :first-child{
+#btn-collection :first-child {
   background-color: white;
 }
 
-
-#purple{
+#purple {
   white-space: nowrap;
   color: #ffe0e4;
   line-height: 6.8rem;
@@ -203,11 +221,125 @@ p {
   font-size: 8rem;
 }
 
-#and{
+#and {
   font-size: 3.7rem;
 }
 
+#merch-community {
+  position: static;
+  height: 38.7rem;
+  display: flex;
+  flex-direction: column;
+  background: 
+    linear-gradient(120deg,#ffb7b7, #ffddcca1, #e0bbc9),
+    linear-gradient(1deg, #d2b0bd 30%, #e0bbcc 40%);
+    padding-top: 4rem;
 
+}
 
+#merch {
+  display: flex;
+  height: 77%;
+  margin-left: 3.4rem;
+}
 
+#merch #images-collection {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
 
+#merch #images-collection a {
+  margin-right: 7.7rem;
+}
+
+#merch pre {
+  position: relative;
+  width: 30%;
+  top: -4rem;
+  left: -14rem;
+}
+
+.text-merch {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.text-merch span {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#community {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 23%;
+  margin-left: 14rem;
+}
+
+#community div pre {
+  top: 123rem;
+  left: -1rem;
+}
+
+#community #yellow{
+  font-size: 7rem;
+}
+
+#merch #yellow{
+  font-size: 6rem;
+}
+
+#community #white {
+  font-size: 4.2rem;
+}
+
+#merch #white {
+  font-size: 3rem;
+}
+
+.normal-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+form {
+  display: flex;
+  position: relative;
+  top: 2.8rem;
+  left: -17.5rem;
+}
+
+form button {
+  border: none;
+  background-color: rgb(177, 21, 55);
+  color: white;
+  width: 7rem;
+  height: 2.2rem;
+  font-size: 0.72rem;
+}
+
+form input {
+  border: 1px solid rgb(175, 46, 74);
+  width: 13.2rem;
+  height: 2rem;
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+  /*mas gruesa*/
+}
+
+#heart {
+  position: absolute;
+  right: 6rem;
+  top: 137.6rem;
+}
+
+footer {
+  background: black;
+  height: 11.2rem;
+}
