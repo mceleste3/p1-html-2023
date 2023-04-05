@@ -58,7 +58,6 @@ video {
 .shadow-text {
   font-family: "Epilogue", sans-serif;
   font-size: 5.5rem;
-  position: absolute;
   text-shadow: 0px 15px 1px rgb(52, 72, 172),
     /*3D*/ -2px -3px 2px rgb(52, 72, 172), 0px 10px 2px rgb(52, 72, 172),
     -2px 8px 1px rgb(52, 72, 172), -2px 14px 1px rgb(52, 72, 172),
@@ -226,7 +225,6 @@ p {
 }
 
 #merch-community {
-  position: static;
   height: 34.3rem;
   display: flex;
   flex-direction: column;
@@ -238,26 +236,27 @@ p {
 }
 
 #merch {
-  display: flex;
-  height: 77%;
-  margin-left: 3.4rem;
+  height: 73%;
+  margin-left: 2.5rem;
+  position: relative;
 }
 
 #merch #images-collection {
-  width: 70%;
+  position: absolute;
   display: flex;
-  flex-direction: row;
+  left: 23rem;
 }
 
 #merch #images-collection a {
-  margin-right: 7.7rem;
+  margin-left: 5rem;
+  margin-right: 1.5rem;
 }
 
 #merch pre {
-  position: relative;
-  width: 30%;
-  top: -4rem;
-  left: -14rem;
+  margin: 0;
+  position: absolute;
+  right: 55.4rem;
+  bottom: 5rem;
 }
 
 .text-merch {
@@ -272,16 +271,16 @@ p {
 }
 
 #community {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 23%;
+  position: relative;
+  height: 27%;
   margin-left: 14rem;
+  margin-right: 6.2rem;
 }
 
-#community div pre {
-  top: 118rem;
-  left: -1rem;
+#community pre:first-of-type { /*Join the community*/
+  position: absolute;
+  top: -14rem;
+  right: 27rem;
 }
 
 #community #yellow{
@@ -301,16 +300,19 @@ p {
 }
 
 .normal-text {
+  position: absolute;
+  top:6.9rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: black;
 }
 
+
 form {
   display: flex;
-  position: relative;
-  top: 1.4rem;
-  left: -17.5rem;
+  position: absolute;
+  top: 2.26rem;
+  left: 42.6rem;
 }
 
 form button {
@@ -335,13 +337,12 @@ form input {
 
 #heart {
   position: absolute;
-  right: 6rem;
-  top: 132.8rem;
+  right: 0.9rem;
+  top: 1rem;
 }
 
 #flower{
   position: absolute;
-  top: 131.6rem;
 }
 
 footer {
