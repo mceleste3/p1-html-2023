@@ -222,7 +222,7 @@ p {
   flex-direction: column;
   background: 
     linear-gradient(120deg,#ffb7b7, #ffddcca1, #e0bbc9),
-    linear-gradient(1deg, #d2b0bd 30%, #e0bbcc 40%);
+    linear-gradient(90deg, #cea1b2 30%, #c6a4b3 40%);
     padding-top: 4rem;
 
 }
@@ -293,7 +293,7 @@ p {
 
 .normal-text {
   position: absolute;
-  top:6.9rem;
+  top:7.3rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: black;
@@ -324,7 +324,6 @@ form input {
 
 ::placeholder {
   color: rgb(0, 0, 0);
-  /*mas gruesa*/
 }
 
 #heart {
@@ -336,9 +335,11 @@ form input {
 #flower{
   position: absolute;
 }
-
+/*------------------------------------------------------------------------*/
 footer {
-  background:pink;
+  background: 
+ linear-gradient(37deg,#ffb7b7, #ffddcca1, #e0bbc9),
+ linear-gradient(90deg, #cea1b2 30%, #c6a4b3 40%);
   height: 14.6rem;
   display: flex;
   flex-direction: column;
